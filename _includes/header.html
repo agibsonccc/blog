@@ -41,12 +41,17 @@
 </div>
 </div>
 
- <div class="right row">
-	<div class="span4">
+ <div class="right">
+	
+	<div class="span2">
+		<img src="https://s3.amazonaws.com/photos.angel.co/users/19232-medium_jpg?1345396733" class="img-polaroid"/>
+		<p>Distributed Systems and NLP. Add some webdev in there.</p>
+	</div>
+    <br />
+	<div class="span2">
       <h6>Other Posts</h6>
       {% for post in site.posts %}
 			<a href="{{ site.base_url }}{{ post.url }}"> {{post.date}} <br />{{ post.title }}</a>
 		{% endfor %}
 	</div>
-		
-		</div>
+	</div>

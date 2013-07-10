@@ -9,3 +9,6 @@ a.menu:after, .dropdown-toggle:after {
 .right {
 	float:right;
 }
+.left {
+	float:left;
+}
