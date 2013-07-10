@@ -1,62 +1,28 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/dropdown.css" />
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Web and Data mining and many things in between : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Web and Data mining and many things in between</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <h1 id="project_title">Web and Data mining and many things in between</h1>
-          <h2 id="project_tagline"></h2>
-        </header>
+  <title>Data Mining, Web Development, among other things</title>
+</head>
+<body>
+  <header>
+    {% include header.html %}
+  </header>
+  <div class="container">
+   
+   <div class="right">
+    {% for post in site.posts %}
+     <a href="{{ site.base_url }}{{ post.url }}">{{page.date}} {{ post.title }}</a>
+    {% endfor %}
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="hi-im-adam-ive-been-a-software-engineer-for-a-few-years-now-i-favor-doing-projects-in-the-realm-of-data-mining-i-dropped-out-of-my-college-3-years-in-to-focus-on-a-little-freelancing-gig-and-go-through-an-accelerator-to-learn-the-ropes-of-business-i-saw-how-hard-it-was-to-start-a-business-chase-your-own-clients-but-loved-the-challenge" class="anchor" href="#hi-im-adam-ive-been-a-software-engineer-for-a-few-years-now-i-favor-doing-projects-in-the-realm-of-data-mining-i-dropped-out-of-my-college-3-years-in-to-focus-on-a-little-freelancing-gig-and-go-through-an-accelerator-to-learn-the-ropes-of-business-i-saw-how-hard-it-was-to-start-a-business-chase-your-own-clients-but-loved-the-challenge"><span class="octicon octicon-link"></span></a>Hi! I'm Adam. I've been a software engineer for a few years now. I favor doing projects in the realm of data mining. I dropped out of my college (3 years in) to focus on a little freelancing gig and go through an accelerator to learn the ropes of business. I saw how hard it was to start a business, chase your own clients, but loved the challenge.</h3>
-
-<p>I discovered however, that I wasn't satisfied doing web consulting as much, so I took whatever time I could to do data mining. Here I am now, doing data forecasting, implementing question answering systems, and my current project:</p>
-
-<p><a href="https://www.mashape.com/agibsonccc/semantic-analytics">https://www.mashape.com/agibsonccc/semantic-analytics</a></p>
-
-<p>I'm looking to use my own API as a basis for selling various products. My first idea is going to be data extraction/scraping software a cut above what's been produced out there. If you have any uses, or just want to reach out, please email me at <a href="mailto:agibson@clevercloudcomputing.com">agibson@clevercloudcomputing.com</a>
-or skype me at: agibsonccc.</p>
-
-<p>Thanks!</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Web and Data mining and many things in between maintained by <a href="https://github.com/agibsonccc">agibsonccc</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-42346198-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
-  </body>
+  </div>
+  <footer>
+    {% include footer.html %}
+  </footer>
+</body>
 </html>

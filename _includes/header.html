@@ -1,0 +1,52 @@
+<div class="navbar">
+<div class="navbar-inner">
+<div class="container">
+	<div class="nav-collapse collapse">
+            <ul class="nav">
+              
+              <li><a class="brand" href="/index.html">Home</a></li>
+
+              <li class="dropdown">
+                 
+
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   Social
+                   <b class="caret"></b>
+                 </a>
+                 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                   <li>
+                   	<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                   	<script type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/adam-gibson/45/b5/347" data-format="click" data-text="Adam Gibson" data-related="false"></script>
+                   </li>
+                 </ul>
+               </li>
+                <li class="dropdown">
+                 
+
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   Projects
+                   <b class="caret"></b>
+                 </a>
+                 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                   <li>
+                    <a href ="apidocs.html">Semantic Analytics</a>
+                   </li>
+                 </ul>
+               </li>
+            </ul>
+          </div>
+
+
+</div>
+</div>
+</div>
+
+ <div class="right row">
+	<div class="span4">
+      <h6>Other Posts</h6>
+      {% for post in site.posts %}
+			<a href="{{ site.base_url }}{{ post.url }}"> {{post.date}} <br />{{ post.title }}</a>
+		{% endfor %}
+	</div>
+		
+		</div>
