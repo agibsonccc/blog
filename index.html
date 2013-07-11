@@ -4,25 +4,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/dropdown.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.url}}/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{site.url}}/stylesheets/dropdown.css" />
 
   <title>Data Mining, Web Development, among other things</title>
+
+  
 </head>
 <body>
   <header>
     {% include header.html %}
   </header>
   <div class="container">
-   
-   <div class="right">
-    {% for post in site.posts %}
-     <a href="{{ site.base_url }}{{ post.url }}">{{page.date}} {{ post.title }}</a>
-    {% endfor %}
-    </div>
-  </div>
+   <p>
+    Hi! I'm Adam, a freelance web developer and data mining specialist. My main project is a backend text analysis service:
+    https://www.mashape.com/agibsonccc/semantic-analytics</p>
+
+  <p>  If you have a specific request or integration you would like, I would love to talk about it.
+    If you aren't sure what you'd use this or various types of data mining services for, here are a few suggestions:</p>
+    <ul>
+        <li>Web site scraping and cleaning for lead generation</li>
+        <li>Database generation</li>
+        <li>Sales Trends to identify weaknesses in your customer conversion funnel</li>
+        <li>Automated data entry and discovery tasks (Think about my API enabling you to automatically find contact information)</li>
+        <li>Address identification for geocoding a photo for a smartphone app</li>
+        <li>Automatic summarization of articles for your custom Google Reader side project you have</li>
+        <li>Automated analysis of survey results to detect sentiment for particular questions or even social media</li>
+
+    </ul>
+   </div>
+
   <footer>
     {% include footer.html %}
   </footer>
+
 </body>
 </html>
