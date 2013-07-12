@@ -54,7 +54,7 @@
 	<div class="span2">
       <h6>Other Posts</h6>
       {% for post in site.posts %}
-			<a href="{{ site.base_url }}{{ post.url }}"> {{post.date}} <br />{{ post.title }}</a>
+			<a href="{{ site.base_url }}/blog/{{ post.url }}"> {{post.date}} <br />{{ post.title }}</a>
 		{% endfor %}
 	</div>
 	</div>
