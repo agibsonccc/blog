@@ -1,0 +1,37 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/dropdown.css" />
+
+	<title>Data Mining, Web Development, among other things</title>
+</head>
+<body>
+	<header>
+		{% include header.html %}
+	</header>
+	<div class="container">
+		<div id="mashape-container"></div>
+		<script type="text/javascript">
+		( function ( window ) {
+		window._MashapeConfig = {
+		  selector: '#mashape-container',
+		  user:     'agibsonccc',
+		  api:      'semantic-analytics'
+		};
+		var script = document.createElement( 'script' );
+		script.type = 'text/javascript';
+		script.src = 'https://www.mashape.com/public/embed.js';
+		var entry = document.getElementsByTagName( 'script' )[0];
+		entry.parentNode.insertBefore( script, entry );
+		}( window ) );
+		</script>
+	</div>
+	<footer>
+		{% include footer.html %}
+	</footer>
+</body>
+</html>
